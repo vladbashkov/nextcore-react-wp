@@ -1,0 +1,153 @@
+@import '../../style/styles.scss';
+@import '../../style/variables.scss';
+
+.product-section {
+    font-family: $main-font;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .product-title {
+        font-size: 38px;
+        font-weight: $fw-extrabold;
+        text-align: center;
+        margin: 0 auto;
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $secondary-green;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: $tablet-small) {
+            flex-direction: column;
+            padding: 15px 0;
+        }
+
+        .product-section-col {
+            // max-width: 33%;
+            flex: 0 1 33.3333%;
+
+            @media (max-width: $tablet-small) {
+                flex: 0 1 100%;
+                width: 100%;
+            }
+
+            &:nth-child(2n) {
+
+                @media (max-width: $tablet-small) {
+                    display: none;
+                }
+
+            }
+
+            .products-block {
+                margin-top: 35px;
+
+                @media (max-width: $tablet) {
+                    margin-top: 0;
+                }
+
+                .products-block_top-container {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+        
+                    .products-block_title {
+                        font-size: 24px;
+                        font-weight: $fw-extrabold;
+                        margin: 20px 0;
+                    }
+        
+                    .products-line {
+                        max-width: 100%;
+                        width: 50%;
+
+                        @media (max-width: $tablet-small) {
+                            display: none;
+                        }
+                    }
+                }
+    
+                .products-list {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-left: 1em;
+        
+                    &.products-list_no-grid {
+                        display: block;
+    
+                        .products-li {
+                            margin: 10px 0;
+                        }
+                    }
+        
+                    .products-li {
+                        font-size: 14px;
+                        color: $text;
+                        opacity: .7;
+                        margin: 5px 0;
+    
+                        &::before {
+                            content: "\2022";
+                            color: $secondary-green;
+                            font-weight: $fw-extrabold;
+                            width: 1em;
+                            display: inline-block;
+                            margin-left: -1em;
+                        }
+                    }
+                }
+            }
+
+            .product-section_barrel {
+                width: 100%;
+                margin: 70px 0;
+
+                @media (max-width: $tablet) {
+                    margin: 80px 0;
+                }
+            }
+        }
+
+        .product-section-col_right {
+            text-align: right;
+
+            .products-block {
+                display: flex;
+                flex-direction: column;
+
+                .products-block_top-container {
+                    flex-direction: row-reverse;
+
+                    .products-block_title {
+                        width: 50%;
+
+                        @media (max-width: $tablet-small) {
+                            width: 100%;
+                        }
+                    }
+
+                    .products-line {
+                        margin-left: -10px;
+                    }
+                }
+
+                .products-list {
+                    width: 50%;
+                    align-self: flex-end;
+                    text-align: left;
+                    margin-left: 1em;
+
+                    @media (max-width: $tablet-small) {
+                        width: 100%;
+                        align-self: start;
+                    }
+                }
+            }
+        }
+    }
+}

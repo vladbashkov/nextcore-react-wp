@@ -1,0 +1,63 @@
+@import '../../style/styles.scss';
+@import '../../style/variables.scss';
+
+.App-footer {
+    background: $secondary-green;
+    color: $white;
+    font-family: $main-font;
+    padding: 25px 0;
+    text-align: center;
+
+    .container {
+        .footer-top_container {
+            margin: 10px 0 50px;
+
+            .nav-logo_container {
+                margin: 30px 0;
+                cursor: pointer;
+            }
+
+            .footer-nav_menu {
+                margin: 15px 0;
+
+                .footer-nav_list {
+                    display: flex;
+                    justify-content: center;
+
+                    .footer_nav-li {
+                        margin: 0 20px;
+                        cursor: pointer;
+                        transition: $trasition;
+
+                        @media (max-width: $mobile-large) {
+                            font-size: 14px;
+                            margin: 0 6px;
+
+                            &:first-child {
+                                margin: 0 6px 0 0;
+                            }
+
+                            &:last-child {
+                                margin: 0 0 0 6px;
+                            }
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: $white;
+                            opacity: .6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-terms_container {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px 0 0 0;
+            font-size: 14px;
+            color: $white;
+            opacity: .6;
+        }
+    }
+}

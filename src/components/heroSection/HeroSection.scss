@@ -1,0 +1,86 @@
+@import "../../style/variables.scss";
+
+.hero-section {
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: "";
+        background: url('../../resources/img/bg.svg') center / cover no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -35%;
+        height: 460px;
+
+        @media (max-width: $tablet-large) {
+            bottom: -20%;
+            height: 350px;
+        }
+
+        @media (max-width: $tablet) {
+            height: 300px;
+        }
+
+        @media (max-width: $tablet-small) {
+            bottom: -15%;
+            height: 200px;
+        }
+    }
+
+    .hero-title {
+        font-family: $third-font;
+        font-size: $h1;
+        font-weight: $fw-extrabold;
+        margin-top: 20px;
+
+        @media (max-width: $tablet-small) {
+            font-size: $h1-tablet;
+        }
+
+        @media (max-width: $mobile-large) {
+            font-size: $h1-mobile-big;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: $h1-mobile;
+            padding: 0 10px;
+        }
+    }
+
+    .hero-subtitle {
+        font-family: $secondary-font;
+        font-size: $hero-subtitle;
+        opacity: .6;
+        margin: 20px auto;
+        max-width: 600px;
+
+        @media (max-width: $mobile-large) {
+            font-size: $hero-subtitle-mobile;
+        }
+
+        @media (max-width: $mobile) {
+            padding: 0 10px;
+        }
+    }
+
+    .hero-contact_btn {
+        border-radius: 14px;
+        padding: 11px 45px;
+        font-family: $secondary-font;
+        font-weight: $fw-extrabold;
+        color: $white;
+        background: $main-green;
+        border: 1px solid $main-green;
+        display: block;
+        margin: 50px auto 0;
+        max-width: 100px;
+        transition: $trasition;
+        cursor: pointer;
+
+        &:hover {
+            color: $main-green;
+            background: transparent;
+        }
+    }
+}

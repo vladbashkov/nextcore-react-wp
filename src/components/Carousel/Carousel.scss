@@ -1,0 +1,201 @@
+@import "../../style/variables.scss";
+
+.carousel {
+    margin: 60px auto;
+    box-sizing: border-box;
+    position: relative;
+
+    @media (max-width: $tablet-large) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: $mobile-large) {
+        margin: 60px auto 30px;
+    }
+
+    &::after {
+        content: "";
+        background: url('../../resources/img/pattern_1.svg') center / cover no-repeat;
+        height: 350px;
+        width: 250px;
+        position: absolute;
+        top: -5%;
+        left: -2%;
+        z-index: -1;
+
+        @media (max-width: $mobile-large) {
+            top: -20%;
+            left: 0;
+        }
+
+        @media (max-width: $mobile) {
+            top: -50%;
+        }
+
+        
+    }
+
+    &::before {
+        content: "";
+        background: url('../../resources/img/pattern_2.svg') center / cover no-repeat;
+        width: 450px;
+        height: 260px;
+        position: absolute;
+        top: 0;
+        right: 15%;
+        z-index: -1;
+
+        @media (max-width: $mobile-large) {
+            top: -15%;
+            right: -20%;
+        }
+
+        @media (max-width: $mobile) {
+            right: -50%;
+            top: -25%;
+        }
+
+        @media (max-width: $mobile-small) {
+            right: -80%;
+        }
+    }
+
+    * {
+        transition: $trasition;
+        outline: none;
+        user-select: none;
+    }
+
+    .slick-list {
+        height: 420px;
+
+        @media (max-width: $tablet) {
+           height: 350px;
+        }
+
+        @media (max-width: $tablet-small) {
+            height: 250px;
+        }
+
+        @media (max-width: $mobile-large) {
+            height: 230px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .slick-track {
+            height: 420px;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: $tablet) {
+                height: 350px;
+            }
+
+            @media (max-width: $tablet-small) {
+                height: 250px;
+            }
+
+            @media (max-width: $mobile-large) {
+                height: 230px;
+            }
+        }
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+
+        .slick-center {
+            display: flex;
+            align-items: center;
+            z-index: 5;
+            // transition-delay: 1s;
+
+            .carousel_slide {
+                transform: scale(1.2);
+                // transition-delay: 1s;
+
+                .slide {
+                    transform: scale(1.2);
+                    // transition-delay: 1s;
+                }
+            }
+        }
+
+        .slick-slide {
+            max-width: 387px;
+            width: auto;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+
+            @media (max-width: $tablet-large) {
+                margin: 0;
+            }
+    
+            .carousel_slide {
+                height: auto;
+                max-width: 387px;
+                display: flex;
+                padding: 15px;
+                box-sizing: border-box;
+        
+                .slide {
+                    width: 100%;
+                    max-width: 387px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .carousel_slide {
+            perspective: 500px;
+        }
+
+        .slick-farleft {
+            margin: 0;
+
+            .carousel_slide {
+                .slide {
+                    transform: rotateY(15deg);
+                    transform-origin: right center;
+                }
+            }
+        }
+
+        .slick-left {
+            margin: 0;
+            
+            .carousel_slide {
+                .slide {
+                    transform: rotateY(25deg);
+                    transform-origin: left center;
+                }
+            }
+        }
+
+        .slick-right {
+            margin: 0;
+            
+            .carousel_slide {
+                .slide {
+                    transform: rotateY(-25deg);
+                    transform-origin: right center;
+                }
+            }
+        }
+
+        .slick-farright {
+            margin: 0;
+            
+            .carousel_slide {
+                .slide {
+                    transform: rotateY(-15deg);
+                    transform-origin: left center;
+                }
+            }
+        }
+    }
+}

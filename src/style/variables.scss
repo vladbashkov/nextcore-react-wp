@@ -1,0 +1,50 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&family=Kumbh+Sans&family=Roboto:wght@700&display=swap');
+$main-font: 'Exo', sans-serif;
+$secondary-font: 'Kumbh Sans', sans-serif;
+$third-font: 'Roboto', sans-serif;
+
+// Colors
+
+$main-green: #50AA33;
+$secondary-green: #64B44A;
+$text-strong: #0D1F3D;
+$text: #0D203F;
+$white: #FFFFFF;
+$black: #000000;
+$nav-bg: #1C1C1C;
+$nav-borders: #252525;
+$grey-bg: #BFC1C7;
+
+// Screen width
+
+$desktop-large: 1960px;
+$desktop: 1650px;
+$laptop: 1450px;
+$tablet-large: 1200px;
+$tablet: 960px;
+$tablet-small: 768px;
+$mobile-large: 640px;
+$mobile: 480px;
+$mobile-small: 375px;
+
+// Fonr sizes
+
+$h1: 92px;
+$h1-tablet: 74px;
+$h1-mobile-big: 60px;
+$h1-mobile: 40px;
+$hero-subtitle: 18px;
+$hero-subtitle-mobile: 15px;
+
+// Font weights 
+
+$fw-semiregular: 400;
+$fw-regular: 500;
+$fw-semibold: 600;
+$fw-extrabold: 700;
+
+// Other
+
+$trasition: all 0.3s ease-in-out;

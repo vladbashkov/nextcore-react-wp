@@ -1,0 +1,154 @@
+@import '../../style/styles.scss';
+@import '../../style/variables.scss';
+
+.service-section {
+    position: relative;
+    padding: 50px 0;
+    font-family: $main-font;
+
+    &::after {
+        content: '';
+        background: url('../../resources/img/bg.svg') center / cover no-repeat;
+        height: 460px;
+        width: 100%;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .container {
+        .service-title {
+            color: $white;
+            font-weight: $fw-extrabold;
+            font-size: 38px;
+            display: inline-block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $white;
+            margin-bottom: 50px;
+        }
+
+        .service-columns {
+            padding: 50px 20px;
+            background: $white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 34px 10px rgba(0, 0, 0, 0.04);
+
+            @media (max-width: $tablet-small) {
+                padding: 15px 15px 50px 15px;
+            }
+
+            .hero-contact_btn {
+                border-radius: 14px;
+                padding: 11px 45px;
+                font-family: $secondary-font;
+                font-weight: $fw-extrabold;
+                color: $white;
+                background: $main-green;
+                border: 1px solid $main-green;
+                display: block;
+                margin: 50px auto 0;
+                max-width: 100px;
+                transition: $trasition;
+        
+                &:hover {
+                    color: $main-green;
+                    background: transparent;
+                }
+            }
+
+            .columns-container {
+                display: flex;
+                text-align: center;
+                align-items: flex-start;
+
+                @media (max-width: $tablet-small) {
+                    flex-direction: column;
+                }
+
+                .service-col {
+
+                    &:first-child {
+                        border-right: 2px solid rgba(100, 180, 74, 0.6);
+
+                        @media (max-width: $tablet-small) {
+                            border-right: none;
+                        }
+
+                        .service-col_text {
+                            padding: 0 35px 0 0;
+
+                            @media (max-width: $tablet-small) {
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        border-left: 2px solid rgba(100, 180, 74, 0.6);
+
+                        @media (max-width: $tablet-small) {
+                            border: none;
+                        }
+
+                        .service-col_text {
+                            padding: 0 0 0 35px;
+
+                            @media (max-width: $tablet-small) {
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    @media (max-width: $tablet-small) {
+                        border-right: none;
+                        border-left: none;
+                        border-bottom: 2px solid rgba(100, 180, 74, 0.6);
+                        padding: 35px 0;
+                    }
+                }
+
+                .icon-container {
+                    padding: 25px;
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 50px;
+
+                    &::before {
+                        content: '';
+                        background: $grey-bg;
+                        border-radius: 26px;
+                        opacity: 0.3;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: 50%;
+                    }
+
+                    .service-col_icon {
+                        position: relative;
+                        z-index: 5;
+                    }
+                }
+
+                .service-col_title {
+                    font-weight: $fw-extrabold;
+                    font-size: 24px;
+                    margin: 20px 0;
+                }
+
+                .service-col_text {
+                    color: $text;
+                    font-size: 16px;
+                    opacity: .6;
+                    padding: 0 35px;
+
+                    @media (max-width: $tablet-small) {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

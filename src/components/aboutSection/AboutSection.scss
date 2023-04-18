@@ -1,0 +1,152 @@
+@import '../../style/styles.scss';
+@import '../../style/variables.scss';
+
+.about-section {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 50px;
+
+    .container {
+        padding: 30px;
+        box-sizing: border-box;
+        background: $white;
+        border-radius: 20px;
+
+        .about-row {
+            display: flex;
+            margin-top: 40px;
+            position: relative;
+
+            @media (max-width: $tablet-small) {
+                flex-direction: column;
+            }
+
+            &.bg-left {
+
+                @media (max-width: $tablet-small) {
+                    flex-direction: column-reverse;
+                    margin-top: 0;
+                }
+
+                &::after {
+                    content: "";
+                    background: url("../../resources/img/dots.svg") center / cover no-repeat;
+                    height: 310px;
+                    width: 480px;
+                    position: absolute;
+                    left: 0;
+                    top: -40px;
+
+                    @media (max-width: $tablet-large) {
+                        width: 430px;
+                        height: 250px;
+                    }
+
+                    @media (max-width: $tablet) {
+                        width: 370px;
+                        height: 200px;
+                    }
+
+                    @media (max-width: $tablet-small) {
+                        top: auto;
+                        bottom: -20px;
+                        left: -5px;
+                    }
+
+                    @media (max-width: $mobile) {
+                        width: 255px;
+                        left: -20px;
+                    }
+                }
+            }
+
+            &.bg-right {
+                &::after {
+                    content: "";
+                    background: url("../../resources/img/dots.svg") center / cover no-repeat;
+                    height: 310px;
+                    width: 480px;
+                    position: absolute;
+                    right: 0;
+                    bottom: -40px;
+
+                    @media (max-width: $tablet-large) {
+                        width: 430px;
+                        height: 250px;
+                    }
+
+                    @media (max-width: $tablet) {
+                        width: 370px;
+                        height: 200px;
+                    }
+
+                    @media (max-width: $tablet-small) {
+                        bottom: -20px;
+                        right: auto;
+                        left: -5px;
+                    }
+
+                    @media (max-width: $mobile) {
+                        width: 255px;
+                        left: -20px;
+                    }
+                }
+            }
+
+            .about-row_block {
+                width: 50%;
+                padding: 15px 30px;
+
+                @media (max-width: $tablet) {
+                    padding: 10px;
+                }
+
+                @media (max-width: $tablet-small) {
+                    width: 100%;
+                }
+
+                @media (max-width: $mobile) {
+                    padding: 10px 0;
+                }
+
+                .about-row_picture {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 5;
+                }
+
+                .aboute-paragraph_title {
+                    font-family: $main-font;
+                    font-weight: $fw-extrabold;
+                    font-size: 38px;
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid $main-green;
+                    display: inline-block;
+                    position: relative;
+                    z-index: 5;
+
+                    @media (max-width: $tablet-small) {
+                        text-align: center;
+                        display: block;
+                    }
+
+                    @media (max-width: $mobile) {
+                        font-size: 28px;
+                    }
+                }
+
+                .about-paragraph_text {
+                    margin-top: 25px;
+                    font-family: $main-font;
+                    font-size: 16px;
+                    font-weight: $fw-semiregular;
+                    opacity: .6;
+                    line-height: 24px;
+                    position: relative;
+                    z-index: 5;
+                }
+            }
+        }
+    }
+}

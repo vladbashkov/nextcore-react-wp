@@ -1,0 +1,149 @@
+@import '../../style/styles.scss';
+@import '../../style/variables.scss';
+
+.location-section {
+    position: relative;
+    padding: 50px 0;
+    font-family: $main-font;
+
+    &::after {
+        content: '';
+        background: url('../../resources/img/bg.svg') center / cover no-repeat;
+        height: 460px;
+        width: 100%;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .container {
+        .location-title {
+            color: $white;
+            font-weight: $fw-extrabold;
+            font-size: 38px;
+            display: inline-block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $white;
+            margin-bottom: 50px;
+
+            @media (max-width: $tablet-small) {
+                font-size: 28px;
+            }
+        }
+
+        .addresses-container {
+            padding: 50px 20px;
+            background: $white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 34px 10px rgba(0, 0, 0, 0.04);
+
+            .address-top {
+                display: flex;
+
+                @media (max-width: $tablet) {
+                    flex-direction: column;
+                }
+            }
+
+            .address-col {
+                display: flex;
+                max-width: 50%;
+                justify-content: space-between;
+
+                @media (max-width: $tablet) {
+                    max-width: 100%;
+                }
+
+                @media (max-width: $tablet-small) {
+                    flex-direction: column;
+                }
+
+                &:first-child {
+                    flex-direction: column;
+
+                    @media (max-width: $tablet) {
+                        margin-bottom: 35px;
+                    }
+                }
+
+                .address-col_title {
+                    font-weight: $fw-extrabold;
+                    font-size: 28px;
+                    margin-bottom: 25px;
+
+                    @media (max-width: $tablet-small) {
+                        font-size: 24px;
+                    }
+                }
+
+                .address-col_text {
+                    font-size: 16px;
+                    opacity: .6;
+                }
+
+                .address-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    text-align: center;
+                    width: 30%;
+                    color: $secondary-green;
+                    font-weight: $fw-semibold;
+                    border-radius: 20px;
+                    transition: $trasition;
+                    font-size: 16px;
+                    padding: 5px;
+                    z-index: 2;
+
+                    @media (max-width: $tablet-small) {
+                        margin: 15px auto;
+                        padding: 30px 0;
+                        width: 90%;
+                    }
+
+                    &:hover {
+                        background: $secondary-green;
+                        color: $white;
+
+                        .adress-icon {
+                            display: none;
+                        }
+
+                        .adress-icon_white {
+                            display: block;
+                        }
+                    }
+
+                    .adress-icon {
+                        max-width: 30px;
+                        margin-bottom: 5px;
+                        padding: 10px 5px;
+
+                        @media (max-width: $tablet-small) {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .adress-icon_white {
+                        display: none;
+                    }
+                }
+            }
+
+            .address-map {
+                perspective: 1500px;
+                margin-top: -5%;
+                overflow: hidden;
+
+                @media (max-width: $tablet-small) {
+                    display: none;
+                }
+
+                img {
+                    transform: rotateX(50deg);
+                }
+            }
+        }
+    }
+}
