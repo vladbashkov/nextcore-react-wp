@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/nextcore-react-wp/static/css/main.146bade3.css",
+    "main.js": "/nextcore-react-wp/static/js/main.41fdec24.js",
+    "static/media/bg.svg": "/nextcore-react-wp/static/media/bg.d6e463e24d3c76f1b4da.svg",
+    "static/media/dots.svg": "/nextcore-react-wp/static/media/dots.efb7b7ed0861cffe7c56.svg",
+    "static/media/big-barrel.svg": "/nextcore-react-wp/static/media/big-barrel.f9b2097f252a66dff5b38157514951f0.svg",
+    "static/media/nextcore-logo-white.svg": "/nextcore-react-wp/static/media/nextcore-logo-white.10df8f48f9626518d0ee603aa48a6699.svg",
+    "static/media/pattern_1.svg": "/nextcore-react-wp/static/media/pattern_1.2a05cad63c543005f16d.svg",
+    "static/media/slick.svg": "/nextcore-react-wp/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/nextcore-react-wp/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/pattern_2.svg": "/nextcore-react-wp/static/media/pattern_2.3c8927d742e944b7a52e.svg",
+    "static/media/slick.ttf": "/nextcore-react-wp/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/nextcore-react-wp/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/mail-white.svg": "/nextcore-react-wp/static/media/mail-white.2160d8ec0c79361d2434b79a08399ff5.svg",
+    "static/media/mail.svg": "/nextcore-react-wp/static/media/mail.30e5843d75c63883f1eccb302ff57122.svg",
+    "static/media/map-pin-white.svg": "/nextcore-react-wp/static/media/map-pin-white.998a2d376bf53278ddf87228006bba74.svg",
+    "static/media/map-pin.svg": "/nextcore-react-wp/static/media/map-pin.9271abe371f05a8e3935b214df7a2328.svg",
+    "index.html": "/nextcore-react-wp/index.html",
+    "static/media/phone-white.svg": "/nextcore-react-wp/static/media/phone-white.efefa76f358776292e34535d15ce52d3.svg",
+    "static/media/phone.svg": "/nextcore-react-wp/static/media/phone.36f13c02a24e07551a5c547a76f87d3c.svg",
+    "static/media/line_4.svg": "/nextcore-react-wp/static/media/line_4.b72bb342c6c4dc70128b6f7d5dc3ea06.svg",
+    "static/media/line_5.svg": "/nextcore-react-wp/static/media/line_5.443f92486523f3beab13cffb95f75bbd.svg",
+    "static/media/line_3.svg": "/nextcore-react-wp/static/media/line_3.3c6b351d42bdae3f5e1e2d9619bd3e0c.svg",
+    "static/media/line_2.svg": "/nextcore-react-wp/static/media/line_2.78322f90fb66657c1e518c604f7fe640.svg",
+    "static/media/line_1.svg": "/nextcore-react-wp/static/media/line_1.ddfca014de193a857438db15d3c20ee1.svg",
+    "static/media/burger-close.svg": "/nextcore-react-wp/static/media/burger-close.beccf1a21389be635cbc595182eea015.svg",
+    "static/media/burger-btn.svg": "/nextcore-react-wp/static/media/burger-btn.ec312d4d919ddaf852d7be2369f511d0.svg",
+    "main.146bade3.css.map": "/nextcore-react-wp/static/css/main.146bade3.css.map",
+    "main.41fdec24.js.map": "/nextcore-react-wp/static/js/main.41fdec24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.146bade3.css",
+    "static/js/main.41fdec24.js"
+  ]
+}
